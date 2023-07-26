@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: "*",
     methods: ["GET", "PUT", "POST", "DELETE"],
   })
 );
