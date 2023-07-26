@@ -26,10 +26,8 @@ app.use(morgan("dev"));
 app.use(
   cors({
     origin: "*",
-    methods: ["GET", "PUT", "POST", "DELETE"],
   })
 );
-
 //routes
 
 app.use("/api/v1/user", userRoutes);
